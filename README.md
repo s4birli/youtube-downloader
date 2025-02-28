@@ -15,7 +15,7 @@ A simple yet powerful Python package to download YouTube videos in your preferre
 
 ## Requirements
 
-- Python 3.x
+- Python 3.x (Not compatible with Python 2.x)
 - yt-dlp library
 
 ## Project Structure
@@ -23,23 +23,39 @@ A simple yet powerful Python package to download YouTube videos in your preferre
 ```
 youtube_downloader/
 ├── youtube_downloader/
-│   ├── __init__.py
-│   ├── __main__.py
-│   └── downloader.py
-├── requirements.txt
-├── README.md
-└── LICENSE
+│   ├── __init__.py      # Package initialization
+│   ├── __main__.py      # Entry point
+│   └── downloader.py    # Main functionality
+├── requirements.txt      # Project dependencies
+├── .gitignore           # Git ignore rules
+├── README.md            # Project documentation
+└── LICENSE             # MIT License
 ```
 
 ## Installation
 
-1. Clone this repository:
+1. Make sure you have Python 3.x installed:
+```bash
+python3 --version
+```
+If not installed, you can install it:
+- On macOS (using Homebrew):
+  ```bash
+  brew install python3
+  ```
+- On Ubuntu/Debian:
+  ```bash
+  sudo apt-get update
+  sudo apt-get install python3
+  ```
+
+2. Clone this repository:
 ```bash
 git clone https://github.com/s4birli/youtubeDownloader
 cd youtubeDownloader
 ```
 
-2. Create and activate a virtual environment (recommended):
+3. Create and activate a virtual environment (recommended):
 ```bash
 # On macOS/Linux
 python3 -m venv venv
@@ -50,7 +66,7 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-3. Install the required dependencies:
+4. Install the required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
@@ -59,11 +75,12 @@ pip install -r requirements.txt
 
 1. Run the script:
 ```bash
-# If using virtual environment (recommended)
-python -m youtube_downloader
+# Make sure your virtual environment is activated
+source venv/bin/activate  # On macOS/Linux
+venv\Scripts\activate     # On Windows
 
-# Or directly
-python3 -m youtube_downloader
+# Run the package
+python -m youtube_downloader
 ```
 
 2. When prompted, paste the YouTube URL you want to download from.
@@ -128,13 +145,47 @@ The package uses:
 To contribute to this project:
 
 1. Fork the repository
-2. Create a virtual environment
-3. Install development dependencies:
+2. Clone your fork:
+```bash
+git clone https://github.com/YOUR_USERNAME/youtubeDownloader
+cd youtubeDownloader
+```
+
+3. Create a virtual environment:
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On macOS/Linux
+```
+
+4. Install development dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-4. Make your changes
-5. Submit a pull request
+
+5. Create a new branch for your feature:
+```bash
+git checkout -b feature/your-feature-name
+```
+
+6. Make your changes and commit:
+```bash
+git add .
+git commit -m "Add your feature description"
+```
+
+7. Push to your fork:
+```bash
+git push origin feature/your-feature-name
+```
+
+8. Submit a pull request
+
+Note: The project includes a `.gitignore` file that excludes:
+- Virtual environment files (`venv/`)
+- Python cache files (`__pycache__/`)
+- IDE specific files (`.vscode/`, `.idea/`)
+- Downloaded videos (`*.mp4`, `*.webm`, `*.mkv`)
+- Log files and system files
 
 ## Limitations
 
@@ -142,6 +193,7 @@ pip install -r requirements.txt
 - Requires stable internet connection
 - Subject to YouTube's terms of service
 - Some videos might not be available for download due to restrictions
+- Requires Python 3.x (not compatible with Python 2.x)
 
 ## Contributing
 
