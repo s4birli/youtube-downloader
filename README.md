@@ -1,6 +1,6 @@
 # YouTube Video Downloader
 
-A simple yet powerful Python script to download YouTube videos in your preferred quality. This tool uses the `yt-dlp` library to provide reliable YouTube video downloads with quality selection options.
+A simple yet powerful Python package to download YouTube videos in your preferred quality. This tool uses the `yt-dlp` library to provide reliable YouTube video downloads with quality selection options.
 
 ## Features
 
@@ -11,11 +11,25 @@ A simple yet powerful Python script to download YouTube videos in your preferred
 - Continuous download mode (download multiple videos)
 - Clean filenames for downloaded videos
 - Error handling for failed downloads
+- Proper logging with timestamps
 
 ## Requirements
 
 - Python 3.x
 - yt-dlp library
+
+## Project Structure
+
+```
+youtube_downloader/
+├── youtube_downloader/
+│   ├── __init__.py
+│   ├── __main__.py
+│   └── downloader.py
+├── requirements.txt
+├── README.md
+└── LICENSE
+```
 
 ## Installation
 
@@ -25,16 +39,31 @@ git clone https://github.com/yourusername/youtubeDownloader.git
 cd youtubeDownloader
 ```
 
-2. Install the required dependencies:
+2. Create and activate a virtual environment (recommended):
 ```bash
-pip3 install -r requirements.txt
+# On macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+
+# On Windows
+python -m venv venv
+venv\Scripts\activate
+```
+
+3. Install the required dependencies:
+```bash
+pip install -r requirements.txt
 ```
 
 ## Usage
 
 1. Run the script:
 ```bash
-python3 youtube_downloader.py
+# If using virtual environment (recommended)
+python -m youtube_downloader
+
+# Or directly
+python3 -m youtube_downloader
 ```
 
 2. When prompted, paste the YouTube URL you want to download from.
@@ -81,14 +110,31 @@ Downloading: 45.2%
 - **Continuous Mode**: Download multiple videos without restarting the script
 - **Error Handling**: Graceful handling of network issues and invalid URLs
 - **Clean Filenames**: Automatically removes invalid characters from filenames
+- **Logging**: Detailed logging with timestamps for better debugging
 
 ## Technical Details
 
-The script uses:
+The package uses:
 - `yt-dlp`: A powerful library for downloading YouTube videos
 - Python's built-in libraries for file handling and user interaction
+- Type hints for better code maintenance
+- Proper logging for debugging
+- Object-oriented design for better code organization
 - Error handling for robust operation
 - Progress hooks for download status updates
+
+## Development
+
+To contribute to this project:
+
+1. Fork the repository
+2. Create a virtual environment
+3. Install development dependencies:
+```bash
+pip install -r requirements.txt
+```
+4. Make your changes
+5. Submit a pull request
 
 ## Limitations
 
