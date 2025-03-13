@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.x](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
-[![YouTube](https://img.shields.io/badge/YouTube-Download-red.svg)](https://github.com/s4birli/youtubeDownloader)
+[![YouTube](https://img.shields.io/badge/YouTube-Download-red.svg)](https://github.com/s4birli/youtube-downloader)
 
 A powerful and user-friendly Python tool for downloading YouTube videos in your preferred quality. Built with `yt-dlp`, this tool offers an interactive command-line interface to download videos with quality selection, progress tracking, and proper error handling.
 
@@ -68,8 +68,8 @@ If not installed, you can install it:
 
 2. Clone this repository:
 ```bash
-git clone https://github.com/s4birli/youtubeDownloader
-cd youtubeDownloader
+git clone https://github.com/s4birli/youtube-downloader
+cd youtube-downloader
 ```
 
 3. Create and activate a virtual environment (recommended):
@@ -164,8 +164,8 @@ To contribute to this project:
 1. Fork the repository
 2. Clone your fork:
 ```bash
-git clone https://github.com/YOUR_USERNAME/youtubeDownloader
-cd youtubeDownloader
+git https://github.com/s4birli/youtube-downloader
+cd youtube-downloader
 ```
 
 3. Create a virtual environment:
