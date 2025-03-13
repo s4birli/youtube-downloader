@@ -1,6 +1,23 @@
 # YouTube Video Downloader
 
-A simple yet powerful Python package to download YouTube videos in your preferred quality. This tool uses the `yt-dlp` library to provide reliable YouTube video downloads with quality selection options.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.x](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
+[![YouTube](https://img.shields.io/badge/YouTube-Download-red.svg)](https://github.com/s4birli/youtubeDownloader)
+
+A powerful and user-friendly Python tool for downloading YouTube videos in your preferred quality. Built with `yt-dlp`, this tool offers an interactive command-line interface to download videos with quality selection, progress tracking, and proper error handling.
+
+## 🚀 Key Features
+
+- 📥 Download YouTube videos in various qualities (up to 1080p)
+- 📊 Show available video qualities with file sizes
+- 🎯 Interactive quality selection
+- 📈 Real-time progress bar during download
+- 🔄 Continuous mode for multiple video downloads
+- 🧹 Clean filenames for downloaded videos
+- ⚠️ Comprehensive error handling
+- 📝 Detailed logging with timestamps
+
+[View Demo](#example) | [Installation](#installation) | [Usage](#usage) | [Contributing](#contributing)
 
 ## Features
 
@@ -156,53 +173,3 @@ cd youtubeDownloader
 python3 -m venv venv
 source venv/bin/activate  # On macOS/Linux
 ```
-
-4. Install development dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-5. Create a new branch for your feature:
-```bash
-git checkout -b feature/your-feature-name
-```
-
-6. Make your changes and commit:
-```bash
-git add .
-git commit -m "Add your feature description"
-```
-
-7. Push to your fork:
-```bash
-git push origin feature/your-feature-name
-```
-
-8. Submit a pull request
-
-Note: The project includes a `.gitignore` file that excludes:
-- Virtual environment files (`venv/`)
-- Python cache files (`__pycache__/`)
-- IDE specific files (`.vscode/`, `.idea/`)
-- Downloaded videos (`*.mp4`, `*.webm`, `*.mkv`)
-- Log files and system files
-
-## Limitations
-
-- Only supports MP4 format
-- Requires stable internet connection
-- Subject to YouTube's terms of service
-- Some videos might not be available for download due to restrictions
-- Requires Python 3.x (not compatible with Python 2.x)
-
-## Contributing
-
-Feel free to fork this repository and submit pull requests for any improvements.
-
-## License
-
-This project is open source and available under the MIT License.
-
-## Disclaimer
-
-This tool is for educational purposes only. Please respect YouTube's terms of service and copyright laws when downloading videos. 
